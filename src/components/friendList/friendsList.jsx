@@ -13,7 +13,7 @@ const FriendsList = () => {
       />
     );
   });
-  return (<ul className={css.friend__list}>{elments}</ul>);
+  return <ul className={css.friend__list}>{elments}</ul>;
 };
 
 FriendsList.propTypes = {

@@ -11,12 +11,12 @@ const Statistics = ({ title, stats }) => {
       {title && <h2 className={css.title}>{title}</h2>}
 
       <ul className={css.list}>
-        {stats.map((data) => {
+        {stats.map(data => {
           return (
             <li
               className={css.item}
               key={data.id}
-              style={{ backgroundColor: getRandomHexColor()}}
+              style={{ backgroundColor: getRandomHexColor() }}
             >
               <span className={css.label}>{data.label}</span>
               <span className={css.percentage}>{data.percentage} %</span>
