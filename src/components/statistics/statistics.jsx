@@ -1,25 +1,25 @@
-import data from './data.json';
-
+// import data from './data.json';
+import css from './statistics.module.css';
 
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
 }
 
-const Statistics = () => {
+const Statistics = ({ title, stats }) => {
   return (
-    <section className="statistics">
-      {data.title && <h2 className={data.title}>{data.title}</h2>}
+    <section className={css.statistics}>
+      {title && <h2 className={css.title}>{title}</h2>}
 
-      <ul className="stat-list">
-        {data.map((data) => {
+      <ul className={css.list}>
+        {stats.map((data) => {
           return (
             <li
-              className={data.item}
+              className={css.item}
               key={data.id}
               style={{ backgroundColor: getRandomHexColor()}}
             >
-              <span className={data.label}>{data.label}</span>
-              <span className={data.percentage}>{data.percentage} %</span>
+              <span className={css.label}>{data.label}</span>
+              <span className={css.percentage}>{data.percentage} %</span>
             </li>
           );
         })}

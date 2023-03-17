@@ -1,5 +1,6 @@
 import user from './user.json';
 import css from "./profile.module.css";
+
 const Profile = () => {
   return (
     <div className={css.profile}>

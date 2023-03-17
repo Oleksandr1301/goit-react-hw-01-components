@@ -11,7 +11,7 @@ function FriendListItem({ isOnline, avatar, name }) {
   );
 }
 
-FriendListItem.prototype = {
+FriendListItem.propTypes = {
   isOnline: PropTypes.bool.isRequired,
   avatar: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,

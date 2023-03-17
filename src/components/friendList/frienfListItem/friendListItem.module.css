@@ -1,8 +1,12 @@
 .item {
   display: flex;
   align-items: center;
-
+  width: 100%;
   margin-bottom: 15px;
+  border: 1px solid #e9eef3;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding-left: 20px;
 }
 
 .item:last-child {
@@ -14,7 +18,7 @@
 
   width: 15px;
   height: 15px;
-  margin-right: 20px;
+  /* margin-right: 20px; */
 
   border-radius: 50%;
 }
@@ -31,8 +35,9 @@
 
 .avatar {
   padding: 15px;
-  margin-right: 20px;
+  margin: 10px 20px;
   border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 .name {
