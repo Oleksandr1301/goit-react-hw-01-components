@@ -1,4 +1,4 @@
-// import data from './data.json';
+import PropTypes from 'prop-types';
 import css from './statistics.module.css';
 
 function getRandomHexColor() {
@@ -29,3 +29,14 @@ const Statistics = ({ title, stats }) => {
 };
 
 export default Statistics;
+
+Statistics.propTypes = {
+  title: PropTypes.string,
+  stats: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      label: PropTypes.string.isRequired,
+      percentage: PropTypes.number.isRequired,
+    })
+  ).isRequired,
+};

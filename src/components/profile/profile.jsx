@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import user from './user.json';
 import css from './profile.module.css';
 
@@ -29,3 +30,11 @@ const Profile = () => {
   );
 };
 export default Profile;
+
+Profile.propTypes = {
+  avatar: PropTypes.string.isRequired,
+  username: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  stats: PropTypes.object.isRequired,
+};
