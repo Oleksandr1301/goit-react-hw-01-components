@@ -20,12 +20,12 @@
 }
 
 .status__true {
-  /* composes: status; */
+  composes: status;
   background-color: #1b9c26;
 }
 
 .status__false {
-  /* composes: status; */
+  composes: status;
   background-color: #a82929;
 }
 

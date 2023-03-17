@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-// import transactions from './transactions.json';
+// import transactions from 'transactions';
 
 const TransactionHistory = ({ transactions }) => {
     return (
